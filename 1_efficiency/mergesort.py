@@ -2,7 +2,9 @@
 Sorts a list of numbers using the merge sort algorithm.
 :Input: A list L of n integers
 :Output: A list of the n integers sorted in increasing order
+
 time complexity: O(n log n)
+T(n) = 2T(n/2) + O(n)
 """
 def merge(left: list, right: list) -> list:
     result = []
