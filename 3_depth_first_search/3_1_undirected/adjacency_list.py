@@ -1,9 +1,9 @@
 """
 adjacency list is a dictionary
 
-requires O(n + m) space
+requires O(|V|+|E|) space
 checks in O(min(deg(u), deg(v))) time if there is an edge between u and v
-identifies all edges incident to a vertex u in O(n + m) time
+identifies all edges incident to a vertex u in O(|V|+|E|) time
 """
 
 def add_edge(u, v):

@@ -4,7 +4,7 @@ Depth First Search (DFS) for undirected graphs
 Input: G = (V, E) is a graph ; v is a vertex in V
 Output: visited(u) is set to True for all nodes u reachable from v
 
-time complexity: O(n + m)
+time complexity: O(|V|+|E|)
 """
 
 G = list

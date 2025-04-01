@@ -1,5 +1,5 @@
 """
-    Computing connected components
+    Decomposition of a Graph into SCCS
 
 At the moment of the first discovery of a node v, we assign it an integer cc identifying the connected componentents to which it belongs.
 The value cc is initialized to 0 and to be incremented each time the DFS calls explore.
@@ -9,7 +9,7 @@ u, v = int, int
 visited = [ False ] * u 
 pre = [0] * v
 post = [0] * v
-cc = 0 # number of connected components
+scc = 0 # number of strongly connected components
 
 def explore(G, v):
     visited[v] = True
@@ -18,8 +18,8 @@ def explore(G, v):
             explore(G, u)
 
 def dfs(G):
-    global cc
+    global scc
     for v in G:
         if not visited[v]:
-            cc += 1
+            scc += 1
             explore(G, v)
