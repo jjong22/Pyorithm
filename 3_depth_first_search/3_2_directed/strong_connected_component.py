@@ -11,15 +11,8 @@ pre = [0] * v
 post = [0] * v
 scc = 0 # number of strongly connected components
 
-def explore(G, v):
-    visited[v] = True
-    for u in G[v]:
-        if not visited[u]:
-            explore(G, u)
+# https://wondy1128.tistory.com/130
+# may be usefull
 
-def dfs(G):
-    global scc
-    for v in G:
-        if not visited[v]:
-            scc += 1
-            explore(G, v)
+# TODO:
+# 1. Implement Kosaraju's algorithm
